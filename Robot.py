@@ -32,15 +32,12 @@ print("")
 print(Choices1)
 print("")
 while (turnCounter < 3):
-    
     turnCounter =  turnCounter +1
-    
     choiceGen = input("What would you like to do?")
     if choiceGen == "0":
         gameChoice.append(0)
     elif choiceGen == "1":
-        gameChoice.append(1)
-        
+        gameChoice.append(1)  
     if choiceGen == "0" and gameChoice == [0]:#Escape
         print(gameChoice)
         print("")
@@ -60,14 +57,12 @@ while (turnCounter < 3):
     elif choiceGen == "1" and gameChoice == [1,1] or gameChoice == [0,1]:
         print(Story11)
         print("")
-        
     elif choiceGen == "2":
         noteWrite = input("What is your note?")
         notePad.append(noteWrite)
         print("")
         noteWrite = None
         turnCounter =  turnCounter -1
-        
     elif choiceGen == "3":
         turnCounter =  turnCounter -1
         print("")
